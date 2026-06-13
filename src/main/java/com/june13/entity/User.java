@@ -47,4 +47,5 @@ public class User {
                 ", userName='" + userName + '\'' +
                 '}';
     }
+    // this for merge conflict testing
 }
