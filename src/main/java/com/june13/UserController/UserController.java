@@ -3,9 +3,7 @@ package com.june13.UserController;
 import com.june13.entity.User;
 import com.june13.userService.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
@@ -15,5 +13,10 @@ public class UserController {
     public String saveUser(@RequestBody User user){
         userService.create(user);
           return "saved successfully";
+    }
+
+    @GetMapping("/{userId}")
+    public User getUser(@PathVariable int userId) {
+        return userService.getUser(userId);
     }
 }
