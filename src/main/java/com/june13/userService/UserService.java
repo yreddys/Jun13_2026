@@ -13,4 +13,8 @@ Map<Integer,User> users= new HashMap<>();
     public void create(User user) {
         users.put(user.getUserId(), user);
     }
+
+    public User getUser(int userId) {
+        return users.get(userId);
+    }
 }
