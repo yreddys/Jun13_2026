@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Jun13Controller {
     @GetMapping("/get")
     public String test(){
-    return "hello reddy its june 13 and its for testing";
+    return "hello reddy its june 13 and its for testing + merge conflict example";
     }
 }
