@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MergeController {
     @GetMapping("/merge")
     public String mergeTest(){
-        return "hello from merge";
+      //   return "hello from merge";
+        return "Hello from Main";
     }
 }

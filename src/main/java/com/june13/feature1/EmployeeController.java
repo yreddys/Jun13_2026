@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class FeatureController {
+public class EmployeeController {
     @Autowired
     private FeatureService fService;
     @GetMapping("/feature")

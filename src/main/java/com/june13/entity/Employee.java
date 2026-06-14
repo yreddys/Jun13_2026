@@ -40,4 +40,5 @@ public class Employee {
                 ", empName='" + empName + '\'' +
                 '}';
     }
+    // from main branch -> Employee Entity
 }
